@@ -85,7 +85,7 @@
 											</a></li>
 											<li class="divider"></li>
 											<li><a href="#" id="pip-chart">
-												<em class="fa fa-cog"></em> pip
+												<em class="fa fa-cog"></em> pie
 											</a></li>
 										</ul>
 									</li>
@@ -130,6 +130,7 @@
 		values = [];
 
 		for(key in res){
+			if(key == 'std_day') continue;
 			days.push(key);
 			values.push(res[key]);
 		}
